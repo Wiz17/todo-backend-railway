@@ -21,6 +21,7 @@ import com.example.todo_pesto_hackathon.service.UserService;
 
 @RestController
 @RequestMapping("/home")
+@CrossOrigin(origins = "https://magnificent-heliotrope-17c77c.netlify.app")
 public class Home {
 
 	@Autowired
