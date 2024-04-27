@@ -25,6 +25,7 @@ import com.example.todo_pesto_hackathon.service.UserService;
 
 @RestController
 @RequestMapping("/auth")
+@CrossOrigin(origins = "https://rainbow-sfogliatella-02010c.netlify.app/")
 public class AuthController {
 
 	@Autowired
