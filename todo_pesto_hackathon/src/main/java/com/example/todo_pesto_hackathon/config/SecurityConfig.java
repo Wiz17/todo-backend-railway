@@ -50,6 +50,7 @@ public class SecurityConfig {
 						.requestMatchers("/auth/login").permitAll()
 						.requestMatchers("/auth/create-user").permitAll()
 						.requestMatchers("/home/trial").permitAll()
+					        .requestMatchers("/home/add-todo").permitAll()
 						.anyRequest().authenticated())
 				.exceptionHandling(ex -> ex.authenticationEntryPoint(point))
 				.sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS));
